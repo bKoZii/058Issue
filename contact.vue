@@ -19,11 +19,10 @@
         </td>
         <td width="190" bgcolor="#FFFF66">
           <ul>
-            <template v-for="link in navLinks" :key="link.name">
-              <li>
-                <a :href="link.url">{{ link.name }}</a>
-              </li>
-            </template>
+            <li><a href="/home">หน้าแรก</a></li>
+            <li><a href="/room">ห้องพัก&ราคา</a></li>
+            <li><a herf="/guest">สมุดเยี่ยม</a></li>
+            <li><a href="/contact">ติดต่อ</a></li>
           </ul>
           <div>
             <LoginForm />
@@ -37,18 +36,4 @@
 <script setup>
 import LoginForm from '/components/LoginForm.vue';
 import Date from '/components/Date.vue';
-
-const navLinks = [{
-  name: 'หน้าแรก',
-  url: '/home'
-}, {
-  name: 'ห้องพัก&ราคา',
-  url: '/room'
-}, {
-  name: 'สมุดเยี่ยม',
-  url: '/guest'
-}, {
-  name: 'ติดต่อ',
-  url: '/contact'
-}]
 </script>
